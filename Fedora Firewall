@@ -1,0 +1,5 @@
+LOGFILE="/var/log/firewall.log"
+
+touch $LOGFILE
+
+tail -f /var/log/messages | grep --line-buffered "kernel:.*IN=" | grep --line-buffered "OUT=" >> $LOGFILE
