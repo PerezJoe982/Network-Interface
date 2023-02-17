@@ -1,0 +1,5 @@
+alias ifconfig='ip addr show
+alias traceroute='traceroute -I
+alias routeadd='sudo ip route add
+alias pinggoogle='ping 8.8.8.8
+alias netstatl='netstat -tulnp
