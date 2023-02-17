@@ -1,0 +1,8 @@
+interfaces=$(ifconfig -s | awk '{print $1}' | tail -n +2)
+
+for interface in $interfaces
+do
+    echo "Bouncing interface $interface"
+    ifdown $interface
+    ifup $interface
+done
