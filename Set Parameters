@@ -1,0 +1,8 @@
+echo "Setting parameters for eth0"
+ifconfig eth0 192.168.1.10 netmask 255.255.255.0
+route add default gw 192.168.1.1
+
+
+echo "Setting parameters for wlan0"
+ifconfig wlan0 10.0.0.10 netmask 255.255.255.0
+route add default gw 10.0.0.20
